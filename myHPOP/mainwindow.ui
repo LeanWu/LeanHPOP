@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_F">
+    <property name="title">
+     <string>文件(&amp;F)</string>
+    </property>
+    <addaction name="actionNewScenario"/>
+    <addaction name="actionOpenScenario"/>
+    <addaction name="actionSaveScenario"/>
+    <addaction name="separator"/>
+    <addaction name="actionSaveSatellite"/>
+   </widget>
+   <widget class="QMenu" name="menu_I">
+    <property name="title">
+     <string>插入(&amp;I)</string>
+    </property>
+    <addaction name="actionInsertSatellite"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpenSatellite"/>
+   </widget>
+   <widget class="QMenu" name="menu_W">
+    <property name="title">
+     <string>视图(&amp;W)</string>
+    </property>
+    <addaction name="action2D"/>
+    <addaction name="action3D"/>
+    <addaction name="separator"/>
+    <addaction name="actionItem"/>
+    <addaction name="actionTime"/>
+    <addaction name="separator"/>
+    <addaction name="actionDrawAll"/>
+    <addaction name="separator"/>
+    <addaction name="actionOutputOrbitText"/>
+   </widget>
+   <widget class="QMenu" name="menu_H">
+    <property name="title">
+     <string>帮助(&amp;H)</string>
+    </property>
+    <addaction name="actionHelp"/>
+   </widget>
+   <addaction name="menu_F"/>
+   <addaction name="menu_W"/>
+   <addaction name="menu_I"/>
+   <addaction name="menu_H"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewScenario"/>
+   <addaction name="separator"/>
+   <addaction name="actionInsertSatellite"/>
+   <addaction name="actionCalculate"/>
+   <addaction name="separator"/>
+   <addaction name="actionPlayPause"/>
+   <addaction name="actionDrawAll"/>
+   <addaction name="separator"/>
+   <addaction name="actionOutputOrbitText"/>
+  </widget>
+  <action name="actionNewScenario">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/new.png</normaloff>:/images/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>新建场景(&amp;N)...</string>
+   </property>
+   <property name="toolTip">
+    <string>新建场景</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionInsertSatellite">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/satellite.png</normaloff>:/images/satellite.png</iconset>
+   </property>
+   <property name="text">
+    <string>插入卫星(&amp;S)...</string>
+   </property>
+   <property name="toolTip">
+    <string>插入卫星</string>
+   </property>
+  </action>
+  <action name="actionCalculate">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/calculate.png</normaloff>:/images/calculate.png</iconset>
+   </property>
+   <property name="text">
+    <string>计算</string>
+   </property>
+   <property name="toolTip">
+    <string>高精度轨道计算</string>
+   </property>
+  </action>
+  <action name="actionOutputOrbitText">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/orbitText.png</normaloff>:/images/orbitText.png</iconset>
+   </property>
+   <property name="text">
+    <string>输出结果</string>
+   </property>
+   <property name="toolTip">
+    <string>输出结果</string>
+   </property>
+  </action>
+  <action name="actionPlayPause">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/play.png</normaloff>:/images/play.png</iconset>
+   </property>
+   <property name="text">
+    <string>暂停开始按钮</string>
+   </property>
+  </action>
+  <action name="actionOpenScenario">
+   <property name="text">
+    <string>打开场景</string>
+   </property>
+  </action>
+  <action name="actionSaveScenario">
+   <property name="text">
+    <string>保存场景</string>
+   </property>
+  </action>
+  <action name="actionOpenSatellite">
+   <property name="text">
+    <string>载入卫星</string>
+   </property>
+  </action>
+  <action name="actionSaveSatellite">
+   <property name="text">
+    <string>保存卫星</string>
+   </property>
+  </action>
+  <action name="action2D">
+   <property name="text">
+    <string>二维视图</string>
+   </property>
+  </action>
+  <action name="action3D">
+   <property name="text">
+    <string>三维视图</string>
+   </property>
+  </action>
+  <action name="actionItem">
+   <property name="text">
+    <string>对象窗口</string>
+   </property>
+  </action>
+  <action name="actionTime">
+   <property name="text">
+    <string>时间窗口</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="text">
+    <string>使用说明</string>
+   </property>
+  </action>
+  <action name="actionDrawAll">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/images/allOrbit.png</normaloff>:/images/allOrbit.png</iconset>
+   </property>
+   <property name="text">
+    <string>绘制所有轨道</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/calculate.png</file>
+        <file>images/new.png</file>
+        <file>images/orbitText.png</file>
+        <file>images/satellite.png</file>
+        <file>earth/Basic.bmp</file>
+        <file>images/allOrbit.png</file>
+        <file>images/pause.png</file>
+        <file>images/play.png</file>
+        <file>images/arrow.png</file>
+        <file>images/icon.png</file>
+        <file>images/arrowup.png</file>
+        <file>shader/orbit.frag</file>
+        <file>shader/orbit.vert</file>
+        <file>images/axis.png</file>
+    </qresource>
+</RCC>
